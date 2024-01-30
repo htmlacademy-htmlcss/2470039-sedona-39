@@ -2,7 +2,7 @@
 
 * Студент: [Светлана Пушкарёва](https://up.htmlacademy.ru/htmlcss/39/user/2470039).
 * Наставник: [Анна Лисенкова](https://htmlacademy.ru/profile/ankhena).
-
+* Сайт [Мой проект Седона](https://atmosphaere.github.io/2470039-sedona-39/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
