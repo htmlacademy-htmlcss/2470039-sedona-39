@@ -20,8 +20,9 @@ body {
   line-height: 21px;
   color: black;
   background-color: white;
-
+  margin: 0, 40px;
 }
+
 
 .header-title {
   color: #000000;
@@ -33,16 +34,43 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-
+  color: #000000;
 }
 
+.navigation-user-link {
+  width: 44px;
+  height: 64px;
+  background-repeat: no-repeat;
+}
 
+.navigation-user-link-search {
+  background-image: url(../images/icons/search.svg);
+}
 
+.navigation-user-link-favorites {
+  background-image: url(../images/icons/heart.svg);
+}
 
+.notification {
+  background-color: #7DB54F;
+  border-radius: 50%;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #FFFFFF;
+  line-height: 10px;
+  text-align: center;
+}
+.navigation-user-link-button {
+  background-color:#756157;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 .main-sedona {
   background-image: url(../images/main-header/index-background.jpg);
-  background-color: blue;
+  background-color: #82B3D3;
   width: 1200px;
   height: 485px;
 }
@@ -118,4 +146,94 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+}
+
+.searching-title {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.searching-description {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.subscribe-title {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.subscribe-description {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.searching-button {
+  background-color:#756157;
+  color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subscribe-button {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.socials-link {
+  width: 47px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+
+.socials-link-vk {
+  background-image: url(../images/socials/vk.svg);
+
+}
+
+.socials-link-telegram {
+  background-image: url(../images/socials/telegram.svg);
+}
+
+.socials-link-youtube {
+  background-image: url(../images/socials/youtube.svg);
+}
+
+.phone {
+  font-family: "PT Sans". sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
