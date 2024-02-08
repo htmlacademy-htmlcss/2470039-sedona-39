@@ -35,12 +35,18 @@ body {
   font-weight: 700;
   line-height: 24px;
   color: #000000;
+  text-decoration: none;
+}
+
+.navigation-link-current {
+  text-decoration: underline;
 }
 
 .navigation-user-link {
   width: 44px;
   height: 64px;
   background-repeat: no-repeat;
+  text-decoration: none;
 }
 
 .navigation-user-link-search {
