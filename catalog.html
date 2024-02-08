@@ -28,13 +28,11 @@
       <ul class="navigation-user">
         <li class="navigation-user-item">
          <a class="navigation-user-link navigation-user-link-search" href="#">
-          <img class="navigation-img search" src="images/icons/search.svg" width="20" height="20" alt="Изображение лупы">
           <span class="visually-hidden">Поиск</span>
         </a>
         </li>
         <li class="navigation-user-item">
           <a class="navigation-user-link navigation-user-link-favorites" href="#">
-            <img class="navigation-img favorite" src="images/icons/heart.svg" width="20" height="20" alt="Изображение сердца">
             <span class="visually-hidden">Добавленные в избранное гостиницы</span>
             <span class="notification">12</span>
           </a>
@@ -49,13 +47,11 @@
 <nav class="breadcrumbs" aria-label="Хлебные крошки">
 <ol class="breadcrumbs-list">
   <li class="breadcrumbs-item">
-  <a  class="breadcrumbs-link" href="index.html">
-    <span class="visually-hidden">На главную</span>
-    <img class="breadcrumbs-item-image main" src="images/icons/main-page.svg" width="12" height="12" alt="Домашняя страница"></a>
-</li>
-<li class="breadcrumbs-item-image">
-  <span class="visually-hidden">Декоративная стрелка</span>
-  <img class="breadcrumbs-item-next" src="images/icons/arrow-right.svg" width="6" height="10" alt="Стрелка далее">
+  <a  class="breadcrumbs-link breadcrumbs-link-main" href="index.html">
+    <span class="visually-hidden">На главную</span></a>
+  </li>
+<li class="breadcrumbs-item breadcrumbs-link-next">
+  <span class="visually-hidden">Декоративная стрелка далее</span>
 </li>
 <li class="breadcrumbs-item">
   <a class="breadcrumbs-link" href="current-page" aria-current="location">Гостиницы</a>
@@ -231,25 +227,22 @@
   </main>
   <footer class="footer" data-test="footer">
     <ul class="socials-list">
-  <li class="socials-item">
-    <a class="socials-link" href="#">
-      <img src="images/socials/vk.svg" alt="Логотип Вконтаке">
-      <span class="visually-hidden">Vk</span>
-    </a>
-  </li>
-  <li class="socials-item">
-    <a class="socials-link" href="#">
-      <img src="images/socials/telegram.svg" alt="Логотип Telegram">
-      <span class="visually-hidden">Telegram</span>
-      </a>
-  </li>
-  <li class="socials-item">
-    <a class="socials-link" href="#">
-      <img src="images/socials/youtube.svg" alt="Логотип Youtube">
-      <span class="visually-hidden">Youtube</span>
-    </a>
-  </li>
-    </ul>
+      <li class="socials-item">
+        <a class="socials-link socials-link-vk" href="#">
+          <span class="visually-hidden">Vk</span>
+        </a>
+      </li>
+      <li class="socials-item">
+        <a class="socials-link socials-link-telegram" href="#">
+          <span class="visually-hidden">Telegram</span>
+          </a>
+      </li>
+      <li class="socials-item">
+        <a class="socials-link socials-link-youtube" href="#">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+        </ul>
   <h2 class="visually-hidden">Номер телефона</h2>
   <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
   <h2 class="visually-hidden">Выполнено Академией Html</h2>
