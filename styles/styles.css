@@ -97,6 +97,7 @@ body {
 }
 
 .navigation-link {
+  display: flex;
   font-family: inherit;
   font-size: 20px;
   font-weight: 700;
@@ -117,10 +118,14 @@ body {
 }
 
 .navigation-user-link-search {
+  width: 2em;
+  height: 2em;
   background-image: url(../images/icons/search.svg);
 }
 
 .navigation-user-link-favorites {
+  width: 2em;
+  height: 2em;
   background-image: url(../images/icons/heart.svg);
 }
 
@@ -414,12 +419,14 @@ body {
 
 .breadcrumbs-item {
   display: flex;
+  justify-content: center;
   margin: 0;
 }
 
 .breadcrumbs-item::after {
   content: "";
   display: flex;
+  justify-content: center;
   background-image: url(../images/icons/arrow-right.svg);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -428,12 +435,17 @@ body {
   margin: 0;
 }
 
+.breadcrumbs-item::after:not(:last-child) {
+  background-image: none;
+}
+
 .breadcrumbs-link {
   display: flex;
+  justify-content: center;
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
-  line-height: 21.31em;
+  line-height: 1.31em;
   text-decoration: none;
   color: #FFFFFF;
   margin: 0;
@@ -441,6 +453,10 @@ body {
 
 .breadcrumbs-link-main {
   display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  height: 1em;
+  width: 1em;
   background-image: url(../images/icons/main-page.svg);
   background-repeat: no-repeat;
   margin: 0;
@@ -457,6 +473,7 @@ body {
 
 .filter-form {
   display: flex;
+  justify-content: flex-start;
   margin: 0;
   height: 160px;
   align-items: center;
@@ -466,20 +483,23 @@ body {
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  margin: 0;
 }
 
 .type-filter {
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  margin: 0;
 }
 
 .price-filter {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   width: 288px;
   height: 104px;
-  align-items: center;
+  margin: 0;
 }
 
 .filter-button {
