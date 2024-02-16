@@ -365,7 +365,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   min-height: 412px;
-  background-image: url(/images/cover-illustration/filter.jpg);
+  background-image: url(../images/cover-illustration/filter.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -385,7 +385,6 @@ body {
 
 .breadcrumbs-list {
   display: flex;
-  justify-content: ;
   height: 21px;
   padding: 0;
   margin: 0;
