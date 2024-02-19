@@ -28,6 +28,7 @@ body {
   margin: 0;
   min-height: 100%;
   display: flex;
+  min-width: 1200px;
 }
 
 .wrap {
@@ -35,6 +36,7 @@ body {
   min-height: 100vh;
   margin-left: 40px;
   margin-right: 40px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -42,11 +44,6 @@ body {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  min-height: 120px;
-}
 
 .visually-hidden {
  position: fixed;
@@ -118,18 +115,28 @@ body {
 }
 
 .navigation-user-link-search {
-  width: 2em;
-  height: 2em;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
   background-image: url(../images/icons/search.svg);
 }
 
 .navigation-user-link-favorites {
-  width: 2em;
-  height: 2em;
+  display: inline-block;
+  flex-shrink: 0;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
   background-image: url(../images/icons/heart.svg);
 }
 
 .notification {
+  display: inline-block;
+  flex-shrink: 0;
+  justify-content: center;
+  vertical-align: super;
   background-color: #7DB54F;
   border-radius: 50%;
   font-family: inherit;
@@ -137,8 +144,8 @@ body {
   font-size: 10px;
   color: #FFFFFF;
   line-height: 1em;
-  text-align: center;
 }
+
 .navigation-user-link-button {
   background-color:#756157;
   color: #FFFFFF;
@@ -199,23 +206,35 @@ body {
   color: #FFFFFF;
 }
 
+.advantages-headline {
+  display: flex;
+  margin: 69px 290px;
+  margin-bottom: 0;
+  width: 620px;
+}
+
 .advantages {
   display: flex;
   flex-direction: column;
-  min-width: 1.200px;
-  min-height: 1.155px;
+  min-width: 1200px;
+  min-height: 1155px;
   margin: 0;
+  justify-content: center;
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  float: inline-start;
+  align-self: flex-start;
   width: 400px;
   height: 385px;
   align-items: center;
@@ -296,7 +315,17 @@ body {
   height: 385px;
 }
 
+.search {
+  display: flex;
+  flex-direction: column;
+  min-height: 406;
+}
+
 .subscribe-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
   background-image: url(../images/cover-illustration/subscribe.jpg);
   height: 415px;
   background-size: cover;
@@ -320,7 +349,7 @@ body {
   padding: 8px 50px;
 }
 
-.searching-button {
+.search-button {
   text-decoration: none;
   background-color:#756157;
   margin: 0 auto;
@@ -334,37 +363,73 @@ body {
   background-color:#F2F2F2;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 120px;
+}
+
 .socials-list {
   display: flex;
-  list-style-type: none;
   margin: 0;
-  flex: 1;
+  padding: 0;
+  list-style-type: none;
+  width: 142;
+  margin-left: 70px;
+}
+
+.socials-item {
+  display: inline-block;
+  justify-content: space-around;
+  margin: 0;
 }
 
 .socials-link {
   width: 47px;
-  height: 40px;
+  height: 47px;
   background-repeat: no-repeat;
   text-decoration: none;
+  margin: 0;
 }
 
 .socials-link-vk {
   background-image: url(../images/socials/vk.svg);
+  display: inline-block;
+  flex-shrink: 0;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
 }
 
 .socials-link-telegram {
   background-image: url(../images/socials/telegram.svg);
+  display: inline-block;
+  flex-shrink: 0;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
 }
 
 .socials-link-youtube {
   background-image: url(../images/socials/youtube.svg);
+  display: inline-block;
+  flex-shrink: 0;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
 }
 
 .contacts {
   display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0;
+  margin-right: 70px;
+  padding: 0;
 }
 
 .phone {
+  display: inline-block;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -374,11 +439,12 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  flex: 2;
+  margin: auto;
+  width: 720px;
 }
 
 .developer {
-  flex: 1;
+  display: inline-block;
 }
 
 /* CATALOG */
