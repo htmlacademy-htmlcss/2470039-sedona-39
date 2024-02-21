@@ -109,17 +109,28 @@
 
               <fieldset class="price-filter">
                 <legend class="price-filter-title filters-title">Стоимость, ₽:</legend>
-                <label class="choose-price" for="first-price">от</label>
-                <input type="number" id="first-price" name="first-price" placeholder="0" value="0">
-                <label class="choose-price" for="last-price">до</label>
-                <input type="number" id="last-price" name="last-price" placeholder="9000" value="9000">
+                <div class="price-area">
+                <label class="first-price" for="first-price">
+                  <span class="price-label">от</span>
+                  <input type="number" id="first-price" name="first-price" placeholder="0" value="0">
+                </label>
+
+                <label class="last-price" for="last-price">
+                  <span class="price-label">до</span>
+                  <input type="number" id="last-price" name="last-price" placeholder="9000" value="9000">
+                </label>
+              </div>
                 <input class="slidecontainer" type="range" min="0" max="9000" value="50" id="myrange">
               </fieldset>
-              <button class="filter-button filter-button-set catalog-button" type="submit">Применить</button>
-              <button class="filter-button  filter-button-reset catalog-button" type="reset">Сбросить</button>
+
+              <div class="filter-buttons">
+                <button class="filter-button filter-button-set catalog-button" type="submit">Применить</button>
+                <button class="filter-button  filter-button-reset catalog-button" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </div>
+
 
         <section class="catalog-navigation">
           <h2 class="catalog-title">Найдено страниц: <span>38</span></h2>
@@ -128,15 +139,17 @@
             <option value="expensive">Сначала дорогие</option>
             <option value="rating">По рейтингу</option>
           </select>
-          <a class="catalog-vision catalog-vision-block" href="#">
-            <span class="visually-hidden">Показать блоки</span>
-          </a>
-          <a class="catalog-vision catalog-vision-slide" href="#">
-            <span class="visually-hidden">Показать слайдшоу</span>
-          </a>
-          <a class="catalog-vision catalog-vision-list" href="#">
-            <span class="visually-hidden">Показать списком</span>
-          </a>
+          <div class="catalog-vision">
+            <a class="catalog-vision-item catalog-vision-block" href="#">
+              <span class="visually-hidden">Показать блоки</span>
+            </a>
+            <a class="catalog-vision-item catalog-vision-slide" href="#">
+              <span class="visually-hidden">Показать слайдшоу</span>
+            </a>
+            <a class="catalog-vision-item catalog-vision-list" href="#">
+              <span class="visually-hidden">Показать списком</span>
+            </a>
+          </div>
         </section>
         <section class="catalog" data-test="catalog">
           <ul class="catalog-list">
@@ -276,9 +289,9 @@
           <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
         <span class="visually-hidden">Выполнено Академией HTML</span>
-          <a class="developer" href="https://htmlacademy.ru">
-            <img class="developer-logo" src="images/logo-html-academy.svg" alt="Логотип Академии">
-          </a>
+        <a class="developer" href="https://htmlacademy.ru">
+          <img class="developer-logo" src="images/logo-html-academy.svg" alt="Логотип Академии">
+        </a>
       </footer>
     </div>
   </body>
