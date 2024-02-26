@@ -140,7 +140,7 @@
             <option value="rating">По рейтингу</option>
           </select>
           <div class="catalog-vision">
-            <a class="catalog-vision-item catalog-vision-block" href="#">
+            <a class="catalog-vision-item catalog-vision-block catalog-vision-active" href="#">
               <span class="visually-hidden">Показать блоки</span>
             </a>
             <a class="catalog-vision-item catalog-vision-slide" href="#">
@@ -256,12 +256,7 @@
             бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="user-email">Укажите Ваш e-mail</label>
-            <input type="text" id="user-email" name="user-email" placeholder="Ваш e-mail" list="mailList">
-            <datalist id="mailList">
-              <option value="@gmail.com">
-              <option value="@mail.ru">
-              <option value="@yandex.ru">
-            </datalist>
+            <input type="email" id="user-email" name="user-email" placeholder="Ваш e-mail" list="mailList">
             <button class="subscribe-button button" type="submit">Подписаться</button>
           </form>
         </section>
