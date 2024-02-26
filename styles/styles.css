@@ -103,7 +103,9 @@ body {
 
 .navigation-link-current {
   text-decoration: underline;
+  text-underline-offset: 24px;
 }
+
 
 .navigation-user {
   display: flex;
@@ -189,6 +191,7 @@ body {
   background-color: #134d73;
   background-repeat: no-repeat;
   background-position: bottom, center;
+  background-position-y: 100.1%, 0;
 }
 
 .section-title {
@@ -236,6 +239,7 @@ body {
 
 .advantages-headline {
   display: flex;
+  flex-wrap: wrap;
   padding: 69px 290px 0 290px;
   margin: 0;
   width: 620px;
@@ -268,15 +272,28 @@ body {
   padding: 0;
 }
 
+.advantages-wrap {
+  display: grid;
+  align-content: space-between;
+  height: 223px;
+  padding: 85px 102px;
+}
+
+.advantages-wrap-bridge {
+  display: grid;
+  align-content: space-between;
+  height: 223px;
+  padding: 85px 102px;
+  grid-column: 2;
+}
+
 .advantages-title {
-  padding: 112px 112px 62px;
   margin: 0;
 }
 
 .advantages-discription {
   text-align: center;
   margin: 0;
-  padding: 0 85px 112px;
 }
 
 .advantages-item-city {
@@ -312,7 +329,7 @@ body {
 .advantages-title-city {
   grid-column: 1;
   grid-row: 1;
-  padding: 102px 112px 62px 112px;
+  padding: 0;
   margin: 0;
 }
 
@@ -323,13 +340,13 @@ body {
 
 .advantages-img-city {
   grid-column: 2;
-  grid-row: span 2;
+  grid-row: 1;
 }
 
 .advantages-title-bridge {
   grid-column: 2;
   grid-row: 1;
-  padding: 102px 112px 62px 112px;
+  padding: 0;
   margin: 0;
 }
 
@@ -340,9 +357,8 @@ body {
 
 .advantages-img-bridge {
   grid-column: 1;
-  grid-row: span 2;
+  grid-row: 1;
 }
-
 
 .infrastructure {
   width: 100%;
@@ -361,6 +377,7 @@ body {
 .infrastructure-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -371,7 +388,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 60% 40%;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   margin: 0;
   padding: 0;
 }
@@ -393,6 +410,7 @@ body {
   grid-row: 2;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .infrastructure-appartment {
@@ -413,17 +431,10 @@ body {
   background-position: 50% 20%;
 }
 
-.infrastructure-description {
-  text-align: center;
-  width: 400px;
-  height: 385px;
-}
-
 .search {
   display: flex;
   flex-direction: column;
-  min-height: 406;
-  padding: 94px 304px;
+  padding: 96px 304px;
   margin: 0;
 }
 
@@ -466,7 +477,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   padding: 8px 50px;
-  border-radius: 4% transparent;
+  border-radius: 4%;
 }
 
 .search-button {
@@ -502,14 +513,15 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
-  height: 120px;
+  min-height: 120px;
 
 }
 
 .socials-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  padding: 45px 41px 35px 70px;
+  padding: 45px 0 35px 70px;
   margin: 0;
 }
 
@@ -517,14 +529,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 0;
+  margin: 0 8px 0 0;
   width: 47.33px;
   height: 40px;
   ;
 }
 
-li.socials-item:last-child {
-  margin: 0;
+li.socials-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .socials-link {
@@ -533,34 +545,26 @@ li.socials-item:last-child {
   background-repeat: no-repeat;
   text-decoration: none;
   margin: 0;
-}
-
-.socials-link-vk {
-  background-image: url(../images/socials/vk.svg);
   display: inline-block;
   flex-shrink: 0;
   width: 1em;
   height: 1em;
+}
+
+.socials-link-vk {
+  background-image: url(../images/socials/vk.svg);
   width: 24px;
   height: 14px;
 }
 
 .socials-link-telegram {
   background-image: url(../images/socials/telegram.svg);
-  display: inline-block;
-  flex-shrink: 0;
-  width: 1em;
-  height: 1em;
   width: 18px;
   height: 15px;
 }
 
 .socials-link-youtube {
   background-image: url(../images/socials/youtube.svg);
-  display: inline-block;
-  flex-shrink: 0;
-  width: 1em;
-  height: 1em;
   width: 22px;
   height: 17px;
 }
@@ -570,7 +574,7 @@ li.socials-item:last-child {
   list-style-type: none;
   justify-content: space-between;
   margin: 0;
-  height: 50px;
+  min-height: 50px;
   padding: 40px 0 30px 0;
 }
 
@@ -636,29 +640,23 @@ li.socials-item:last-child {
 
 .breadcrumbs-item {
   display: flex;
-  justify-content: center;
   margin: 0;
 }
 
-.breadcrumbs-item::after {
+
+.breadcrumbs-item:not(:last-child)::after {
   content: "";
   display: flex;
-  justify-content: center;
   background-image: url(../images/icons/arrow-right.svg);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   width: 8px;
   height: 20px;
-  margin: 0;
-}
-
-.breadcrumbs-item::after:not(:last-child) {
-  background-image: none;
+  margin: 0 10.8px;
 }
 
 .breadcrumbs-link {
   display: flex;
-  justify-content: center;
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
@@ -671,11 +669,11 @@ li.socials-item:last-child {
 .breadcrumbs-link-main {
   display: flex;
   flex-shrink: 0;
-  justify-content: center;
-  height: 1em;
-  width: 1em;
+  height: 15px;
+  width: 13px;
   background-image: url(../images/icons/main-page.svg);
   background-repeat: no-repeat;
+  background-position: bottom;
   margin: 0;
 }
 
@@ -692,9 +690,10 @@ li.socials-item:last-child {
 
 .filter-form {
   display: flex;
+  flex-wrap: wrap;
   gap: 70px;
   margin: 0;
-  height: 160px;
+  min-height: 160px;
   align-items: flex-start;
 }
 
@@ -717,6 +716,7 @@ li.socials-item:last-child {
 .infrastructure-filter {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 150px;
   margin: 0;
   padding: 0;
@@ -730,6 +730,7 @@ li.socials-item:last-child {
 .type-filter {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 150px;
   margin: 0;
   padding: 0;
@@ -849,6 +850,7 @@ li.socials-item:last-child {
 
 .catalog-vision {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   min-width: 160px;
   align-items: center;
@@ -1065,6 +1067,7 @@ li.socials-item:last-child {
 
 .subscribe-catalog {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
   padding: 96px 258px 104px;
@@ -1075,7 +1078,7 @@ li.socials-item:last-child {
 .subscribe-form {
   display: flex;
   justify-content: center;
-  height: 52px;
+  min-height: 52px;
   margin: 0;
 }
 
