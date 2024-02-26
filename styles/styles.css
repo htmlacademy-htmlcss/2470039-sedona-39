@@ -292,6 +292,10 @@ body {
 }
 
 .advantages-discription {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.16em;
   text-align: center;
   margin: 0;
 }
