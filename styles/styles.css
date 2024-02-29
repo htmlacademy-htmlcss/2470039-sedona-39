@@ -113,7 +113,6 @@ body {
   text-decoration-color: #756257;
 }
 
-
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
@@ -132,7 +131,6 @@ body {
   list-style-type: none;
 }
 
-
 .navigation-user-link {
   display: flex;
   background-repeat: no-repeat;
@@ -149,12 +147,29 @@ body {
 }
 
 .navigation-user-link-favorites {
+  position: relative;
   display: inline-block;
   flex-shrink: 0;
   width: 20px;
   height: 20px;
   background-image: url(../images/icons/heart.svg);
-  position: relative;
+}
+
+.notification {
+  position: absolute;
+  top: -11px;
+  right: -9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 50%;
+  color: #000;
+  background-color: #7DB54F;
 }
 
 .navigation-user-link-button {
@@ -164,23 +179,6 @@ body {
   color: #FFFFFF;
   text-transform: uppercase;
   padding: 8px 34px;
-}
-
-
-.notification {
-  position: absolute;
-  top: -11px;
-  left: 9px;
-  display: block;
-  min-width: 20px;
-  min-height: 20px;
-  font-size: 10px;
-  line-height: 10px;
-  font-weight: 400;
-  text-align: center;
-  border-radius: 50%;
-  color: #000;
-  background-color: #7DB54F;
 }
 
 .main-sedona {
@@ -803,7 +801,6 @@ li.socials-item:nth-child(3n) {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.27em;
-  text-align: left;
   color: #FFFFFF;
   list-style-type: none;
 }
@@ -822,11 +819,57 @@ li.socials-item:nth-child(3n) {
   border: none;
 }
 
+.choose {
+  padding-left: 30px;
+  position: relative;
+}
+
+.choose-type {
+  padding-left: 16px;
+  position: relative;
+}
+
+.infrastructure-input {
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  left: 0;
+  margin: 0;
+}
+
+.infrastructure-input:checked {
+  background-image: url(../images/icons/checkboks.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .type-filter-list {
   padding: 0;
 }
 
+.type-input {
+  border-radius: 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #FFFFFF;
+  margin: 0;
+}
 
+.type-input:checked {
+  background-image: url(../images/icons/radio.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 
 .type-filter {
   display: flex;
@@ -952,8 +995,19 @@ li.socials-item:nth-child(3n) {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.16em;
-  margin-right: 70px;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../images/icons/arrow-down.svg") no-repeat right;
+  background-position-x: 260px;
+  outline: none;
 }
+
+.catalog-select::-ms-expand {
+  display: none;
+}
+
 
 .catalog-vision {
   display: flex;
