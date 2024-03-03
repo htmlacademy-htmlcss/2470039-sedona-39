@@ -112,12 +112,12 @@
                 <div class="price-area">
                   <label class="first-price" for="first-price">
                     <span class="price-label">от</span>
-                    <input type="number" id="first-price" name="first-price" placeholder="0" value="0">
+                    <input type="text" inputmode="numeric" id="first-price" name="first-price" placeholder="0" value="0">
                   </label>
 
                   <label class="last-price" for="last-price">
                     <span class="price-label">до</span>
-                    <input type="number" id="last-price" name="last-price" placeholder="9000" value="9000">
+                    <input type="text" inputmode="numeric" id="last-price" name="last-price" placeholder="9000" value="9000">
                   </label>
                 </div>
                 <input class="slidecontainer" type="range" min="0" max="9000" value="50" id="myrange">
@@ -257,7 +257,7 @@
             честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="user-email">Укажите Ваш e-mail</label>
-            <input type="email" id="user-email" name="user-email" placeholder="Ваш e-mail">
+            <input input type="email" inputmode="email" id="user-email" name="user-email" placeholder="Ваш e-mail">
             <button class="subscribe-button blue-button" type="submit">Подписаться</button>
           </form>
         </section>
