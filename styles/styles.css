@@ -1603,6 +1603,8 @@ li.socials-item:nth-child(3n) {
 }
 
 .pagination-link:hover {
+  width: 59px;
+  height: 59px;
   border: 1px solid var(--basic-blue);
   background-color: var(--blue-hover);
 }
