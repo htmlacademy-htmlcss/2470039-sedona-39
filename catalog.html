@@ -112,12 +112,12 @@
                 <div class="price-area">
                   <label class="first-price" for="first-price">
                     <span class="price-label">от</span>
-                    <input type="text" inputmode="numeric" id="first-price" name="first-price" placeholder="0" value="0">
+                    <input type="text" inputmode="numeric" pattern="\d*" id="first-price" name="first-price" placeholder="0" value="0">
                   </label>
 
                   <label class="last-price" for="last-price">
                     <span class="price-label">до</span>
-                    <input type="text" inputmode="numeric" id="last-price" name="last-price" placeholder="9000" value="9000">
+                    <input type="text" inputmode="numeric" pattern="\d*" id="last-price" name="last-price" placeholder="9000" value="9000">
                   </label>
                 </div>
                 <input class="slidecontainer" type="range" min="0" max="9000" value="50" id="myrange">
