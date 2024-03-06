@@ -313,7 +313,6 @@ body {
 }
 
 .advantages-headline {
-  display: -moz-box;
   display: flex;
   flex-wrap: wrap;
   padding: 0 290px;
@@ -326,32 +325,11 @@ body {
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.advantages-item {
-  display: flex;
-  -moz-box-orient: vertical;
-  -moz-box-direction: normal;
-  flex-direction: column;
-  -moz-box-pack: center;
-  justify-content: center;
-  width: 400px;
-  height: 385px;
-  margin: 0;
-  padding: 0;
-  background-color: var(--basic-blue);
-}
-
-.advantages-wrap {
   display: grid;
-  width: 230px;
-  min-height: 160px;
-  padding: 85px 102px;
+  grid-template-columns: repeat(3,1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .advantages-title {
@@ -372,6 +350,45 @@ body {
   margin: 0;
 }
 
+.advantages-item-city {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-column: 1 / -1;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.advantages-item-square {
+  padding: 102px 85px;
+  background-color: rgba(131, 179, 211, 0.12);
+  color: var(--second-black);
+}
+
+.advantages-item-road {
+  padding: 102px 85px;
+  background-color: rgba(131, 179, 211, 0.3);
+  color: var(--second-black);
+}
+
+.advantages-item-tourists {
+  padding: 102px 85px;
+  background-color: rgba(131, 179, 211, 0.12);
+  color: var(--second-black);
+}
+
+.advantages-item-bridge {
+  display: flex;
+  flex-direction: row-reverse;
+  grid-column: 1/-1;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.advantages-wrap-city,
+.advantages-wrap-bridge {
+  padding: 102px 85px;
+}
+
 .advantages-title::after {
   content: "";
   display: block;
@@ -383,64 +400,7 @@ body {
   opacity: 0.3;
 }
 
-.advantages-item-city {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  width: 1200px;
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
-}
-
-.advantages-title-city {
-  grid-column: 1;
-  padding: 0;
-}
-
-.advantages-title-city::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 2px;
-  margin: auto;
-  margin-top: 30px;
-  background-color: var(--basic-white);
-  opacity: 0.3;
-}
-
-.advantages-img-city {
-  grid-column: 2/4;
-}
-
-.advantages-wrap-city {
-  padding: 85px 102px;
-}
-
-
-.advantages-item-square {
-  background-color: rgba(131, 179, 211, 0.12);
-  color: var(--second-black);
-}
-
-.advantages-item-road {
-  background-color: rgba(131, 179, 211, 0.3);
-  color: var(--second-black);
-}
-
-.advantages-item-tourists {
-  background-color: rgba(131, 179, 211, 0.12);
-  color: var(--second-black);
-}
-
-
-
-.advantages-item-bridge {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1200px;
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
-}
-
+.advantages-title-city::after,
 .advantages-title-bridge::after {
   content: "";
   display: block;
@@ -451,24 +411,6 @@ body {
   background-color: var(--basic-white);
   opacity: 0.3;
 }
-
-.advantages-title-bridge {
-  padding: 0;
-  margin: 0;
-}
-
-.advantages-img-bridge {
-  grid-column: 1/3;
-  grid-row: 1;
-}
-
-.advantages-wrap-bridge {
-  display: grid;
-  min-height: 181px;
-  padding: 85px 102px;
-  grid-column: 3/4;
-}
-
 
 .infrastructure {
   width: 100%;
