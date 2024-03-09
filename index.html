@@ -6,8 +6,7 @@
     <meta name="keywords" content="Седона, Отели Седоны, Sedona">
     <meta name="description" content="Лучший сайт, если вы планируете путешествие в Седону">
     <title>HTML Academy: Седона</title>
-    <link type="image/x-icon" href="/images/icons/favicon.ico" rel="shortcut icon">
-    <link type="Image/x-icon" href="/images/icons/favicon.ico" rel="icon">
+    <link rel="icon" href="/images/icons/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -93,7 +92,8 @@
         </section>
         <section class="infrastructure">
           <h2 class="visually-hidden">Инфраструктура</h2>
-          <p class="infrastructure-section-title section-title">Приезжайте в Седону отдохнуть <br> в комфорте и уюте!</p>
+          <p class="infrastructure-section-title section-title">Приезжайте в Седону отдохнуть <br> в комфорте и уюте!
+          </p>
           <p class="infrastructure-headline section-headline">Опытный персонал и качественное обслуживание!</p>
           <ul class="infrastructure-list">
             <li class="infrastructure-item  infrastructure-appartment">
@@ -161,45 +161,50 @@
       </footer>
 
 
-      <!-- <div class="modal-window">
+      <div class="modal-window">
         <div class="modal-container">
+
           <h2 class="section-title modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
 
             <fieldset class="stay-time-form">
               <div class="stay-time-wrapper">
-                <label class="stay-time-label" for="check-in">
-                  <legend class="modal-headline">Дата заезда:</legend>
-                  <input id="check-in" type="date" name="check-in" value="2020-04-27" min="2018-01-01" max="2025-12-31">
-                </label>
+                <label class="stay-time-label modal-headline" for="check-in">Дата заезда:</label>
+                <input id="check-in" type="text" name="check-in" value="27 апреля 2020">
               </div>
+              <p class="form-warning">Мы не можем отправить вас в прошлое.</p>
               <div class="stay-time-wrapper">
-                <label class="stay-time-label" for="check-out">
-                  <legend class="modal-headline">Дата выезда:</legend>
-                  <input id="check-out" type="date" name="check-out" value="2020-04-27" min="2018-01-01" max="2025-12-31">
-                </label>
+                <label class="stay-time-label modal-headline" for="check-out">Дата выезда:</label>
+                <input id="check-out" type="text" name="check-out" value="1 сентября 2023">
               </div>
+              <p class="form-message">На эти даты есть свободные номера. Пока есть.</p>
             </fieldset>
 
 
             <fieldset class="ages-form">
-              <legend class="modal-headline ages-headline">Взрослые:</legend>
-              <label for="adult">
-                <input class="adult-input" id="adult" type="number" name="adult-number" min="1">
-              </label>
-
-              <legend class="modal-headline ages-headline">Дети:</legend>
-              <label for="kids">
-                <input class="kids-input" id="kids" type="number" name="kids" min="0">
-              </label>
+              <div class="ages-wrapper-adults">
+                <label class="modal-headline ages-headline" for="adult">Взрослые:</label>
+                <input class="adult-input" id="adult" type="number" name="adult-number" min="1" value="2">
+              </div>
+              <div class="ages-wrapper-kids">
+                <label class="modal-headline ages-headline kids-remainder" for="kids">Дети:</label>
+                <div class="tooltip" aria-labelledby="tooltip-label-kids">
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, <br> которые
+                    будут с вами, возраст которых от
+                    6 до 18лет. Дети <br> до 6 лет размещаются <br> бесплатно.</span>
+                </div>
+                <input class="kids-input" id="kids" type="number" name="kids" min="0" value="2">
+              </div>
             </fieldset>
 
             <button class="modal-button button blue-button" type="button">Найти</button>
-
+            <button class="modal-close-button modal-container-close">
+              <span class="visually-hidden">Кнопка закрытия модального окна</span>
+            </button>
           </form>
           <button class="modal-exit visually-hidden">Закрыть</button>
         </div>
-      </div> -->
+      </div>
 
     </div>
   </body>
