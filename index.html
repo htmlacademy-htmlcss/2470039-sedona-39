@@ -119,7 +119,7 @@
           <p class="search-description section-headline">Укажите предполагаемые даты поездки, <br> и мы покажем вам
             лучшие
             предложения гостиниц в Седоне</p>
-          <a class="search-button button brown-button" href="#">Поиск гостиницы в Седоне</a>
+          <button class="search-button button brown-button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="subscribe-index" data-test="subscribe">
           <h2 class="subscribe-title section-title">Подпишитесь на рассылку</h2>
@@ -184,8 +184,8 @@
                   <button class="count-button count-less" type="button">
                     <span class="visually-hidden">Уменьшить количество</span>
                   </button>
-                  <input class="adult-input modal-input" id="adult" type="text" inputmode="numeric" name="adult-number"
-                    min="1" value="2">
+                  <input class="adult-input" id="adult" type="text" inputmode="numeric" name="adult-number"
+                    value="2">
                   <button class="count-button count-more" type="button">
                     <span class="visually-hidden">Увеличить количество</span>
                   </button>
@@ -199,23 +199,22 @@
                     будут с вами, возраст которых от
                     6 до 18лет. Дети <br> до 6 лет размещаются <br> бесплатно.</span>
                 </div>
-                <div class="count-ages-wrapper">
-                  <button class="count-button count-less" type="button">
-                    <span class="visually-hidden">Уменьшить количество</span>
-                  </button>
-                  <input class="kids-input modal-input" id="kids" type="text" inputmode="numeric" name="kids" min="0"
-                    value="2">
-                  <button class="count-button count-more" type="button">
-                    <span class="visually-hidden">Увеличить количество</span>
-                  </button>
-                </div>
+              </div>
+              <div class="count-ages-wrapper">
+                <button class="count-button count-less" type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
+                <input class="kids-input" id="kids" type="text" inputmode="numeric" name="kids" value="2">
+                <button class="count-button count-more" type="button">
+                  <span class="visually-hidden">Увеличить количество</span>
+                </button>
+              </div>
             </fieldset>
             <button class="modal-button button blue-button" type="button">Найти</button>
-            <button class="modal-close-button modal-container-close">
-              <span class="visually-hidden">Кнопка закрытия модального окна</span>
-            </button>
           </form>
-          <button class="modal-exit visually-hidden">Закрыть</button>
+          <button class="modal-close-button modal-container-close">
+            <span class="visually-hidden">Кнопка закрытия модального окна</span>
+          </button>
         </div>
       </div>
 
