@@ -6,7 +6,8 @@
     <meta name="keywords" content="Седона, Отели Седоны, Sedona">
     <meta name="description" content="Лучший сайт, если вы планируете путешествие в Седону">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="/images/icons/favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="/images/icons/favicon32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -41,8 +42,11 @@
                 <span class="notification">12</span>
               </a>
             </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-user-link-button brown-button" href="catalog.html">Хочу сюда!</a>
+            </li>
           </ul>
-          <a class="navigation-user-link navigation-user-link-button brown-button" href="catalog.html">Хочу сюда!</a>
+
         </nav>
       </header>
       <main class="main-index" data-test="main">
@@ -193,12 +197,14 @@
               </div>
               <div class="ages-wrapper-kids">
                 <label class="modal-headline ages-headline kids-remainder" for="kids">Дети:</label>
-                <div class="tooltip" aria-labelledby="tooltip-label-kids">
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, <br>
+
+                <button class="tooltip" aria-labelledby="tooltip-label-kids">
+                  <p class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, <br>
                     которые
                     будут с вами, возраст которых от
-                    6 до 18лет. Дети <br> до 6 лет размещаются <br> бесплатно.</span>
-                </div>
+                    6 до 18лет. Дети <br> до 6 лет размещаются <br> бесплатно.</p>
+                  </button>
+
               </div>
               <div class="count-ages-wrapper">
                 <button class="count-button count-less" type="button">
@@ -212,9 +218,11 @@
             </fieldset>
             <button class="modal-button button blue-button" type="button">Найти</button>
           </form>
-          <button class="modal-close-button modal-container-close">
+          <form class="modal-exit" method="dialog">
+          <button class="modal-close-button modal-container-close" type="submit">
             <span class="visually-hidden">Кнопка закрытия модального окна</span>
           </button>
+        </form>
         </div>
       </div>
 
