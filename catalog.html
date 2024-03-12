@@ -14,6 +14,7 @@
 
   <body>
     <div class="wrap">
+      <!--Header-->
       <header class="header-title" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" aria-current="page" href="index.html">
@@ -44,17 +45,16 @@
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-link-button brown-button" href="catalog.html">Хочу сюда!</a>
+              <a class="navigation-user-link navigation-user-link-button brown-button" href="catalog.html">Хочу
+                сюда!</a>
             </li>
           </ul>
-
         </nav>
       </header>
-
+      <!-- Main-section-->
       <main class="main-catalog" data-test="main">
         <div class="hotels-filter" data-test="filter">
           <h1 class="hotels-filter-title">Гостиницы Седоны</h1>
-
           <nav class="breadcrumbs" aria-label="Хлебные крошки">
             <ol class="breadcrumbs-list">
               <li class="breadcrumbs-item">
@@ -67,11 +67,10 @@
               </li>
             </ol>
           </nav>
-
+          <!-- Filter-section-->
           <section class="form-section">
             <h2 class="visually-hidden">Фильтры поиска</h2>
             <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-
               <fieldset class="infrastructure-filter">
                 <legend class="infrastructure-filter-title filters-title">Инфраструктура:</legend>
                 <ul class="infrastructure-filter-list">
@@ -91,7 +90,6 @@
                   </li>
                 </ul>
               </fieldset>
-
               <fieldset class="type-filter">
                 <legend class="type-filter-title filters-title">Тип Жилья:</legend>
                 <ul class="type-filter-list">
@@ -109,7 +107,6 @@
                   </li>
                 </ul>
               </fieldset>
-
               <fieldset class="price-filter">
                 <legend class="price-filter-title filters-title">Стоимость, ₽:</legend>
                 <div class="price-area">
@@ -118,7 +115,6 @@
                     <input type="text" inputmode="numeric" pattern="\d*" id="first-price" name="first-price"
                       placeholder="0" value="0">
                   </label>
-
                   <label class="last-price" for="last-price">
                     <span class="price-label">до</span>
                     <input type="text" inputmode="numeric" pattern="\d*" id="last-price" name="last-price"
@@ -138,7 +134,6 @@
                   </div>
                 </div>
               </fieldset>
-
               <div class="filter-buttons">
                 <button class="filter-button filter-button-set catalog-button blue-button"
                   type="submit">Применить</button>
@@ -147,8 +142,7 @@
             </form>
           </section>
         </div>
-
-
+        <!-- Catalog-section-->
         <section class="catalog-navigation">
           <h2 class="catalog-title">Найдено гостиниц: 38</h2>
           <select class="catalog-select">
@@ -169,6 +163,7 @@
           </div>
         </section>
         <section class="catalog" data-test="catalog">
+          <h2 class="section-title visually-hidden">Список отелей</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
               <a class="hotel-link" href="#" tabindex="-1">
@@ -187,7 +182,6 @@
               </p>
               <p class="hotel-rating">Рейтинг 8,5</p>
             </li>
-
             <li class="catalog-item">
               <a class="hotel-link" href="#" tabindex="-1">
                 <h3 class="hotel-name">Villas at Poco Diablo</h3>
@@ -206,7 +200,6 @@
               </p>
               <p class="hotel-rating">Рейтинг 9,2</p>
             </li>
-
             <li class="catalog-item">
               <a class="hotel-link" href="#" tabindex="-1">
                 <h3 class="hotel-name">Desert Quail Inn</h3>
@@ -223,7 +216,6 @@
               </p>
               <p class="hotel-rating">Рейтинг 6,9</p>
             </li>
-
             <li class="catalog-item">
               <a class="hotel-link" href="#" tabindex="-1">
                 <h3 class="hotel-name">GreenTree Inn</h3>
@@ -243,7 +235,7 @@
             </li>
           </ul>
         </section>
-
+        <!-- Pagination -->
         <nav aria-label="Навигация страниц">
           <ul class="pagination">
             <li class="pagination-item">
@@ -266,18 +258,19 @@
             </li>
           </ul>
         </nav>
-
+        <!-- Sbscribe-section -->
         <section class="subscribe-catalog" data-test="subscribe">
           <h2 class="subscribe-title-catalog section-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description-catalog section-headline">Только полезная информация и никакого спама, <br>
             честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="user-email">Укажите Ваш e-mail</label>
-            <input type="email" inputmode="email" id="user-email" name="user-email" placeholder="Ваш e-mail">
+            <input type="email" inputmode="email" id="user-email" name="user-email" placeholder="Ваш e-mail" required>
             <button class="subscribe-button blue-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
+      <!-- Footer -->
       <footer class="footer" data-test="footer">
         <ul class="socials-list">
           <li class="socials-item">

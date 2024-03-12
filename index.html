@@ -13,6 +13,7 @@
 
   <body>
     <div class="wrap">
+      <!-- Header -->
       <header class="header-title" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" aria-current="page" href="index.html">
@@ -43,18 +44,20 @@
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-link-button brown-button" href="catalog.html">Хочу сюда!</a>
+              <a class="navigation-user-link navigation-user-link-button brown-button" href="catalog.html">Хочу
+                сюда!</a>
             </li>
           </ul>
-
         </nav>
       </header>
+      <!-- Main-section -->
       <main class="main-index" data-test="main">
         <section class="main-sedona" data-test="hero">
           <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
           <img class="welcome" src="images/cover-illustration/welcome.svg" width="458" height="352"
             alt="Welcome to the gorgeous Sedona. Because The Grand Canyon sucks!">
         </section>
+        <!-- Advantages-section -->
         <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <p class="advantages-headline section-title">Седона — небольшой городок в Аризоне,
@@ -85,7 +88,8 @@
             </li>
             <li class="advantages-item advantages-item-bridge">
               <div class="advantages-wrap-bridge">
-                <h3 class="advantages-title uppercase-title-white advantages-title-bridge">Там есть <br> мост дьявола</h3>
+                <h3 class="advantages-title uppercase-title-white advantages-title-bridge">Там есть <br> мост дьявола
+                </h3>
                 <p class="advantages-discription advantages-discription-bridge">Да, по нему можно пройти! Если вы
                   осмелитесь, разумеется</p>
               </div>
@@ -94,6 +98,7 @@
             </li>
           </ul>
         </section>
+        <!-- Infrastructure-section-->
         <section class="infrastructure">
           <h2 class="visually-hidden">Инфраструктура</h2>
           <p class="infrastructure-section-title section-title">Приезжайте в Седону отдохнуть <br> в комфорте и уюте!
@@ -117,7 +122,7 @@
             </li>
           </ul>
         </section>
-
+        <!-- Search-section-->
         <section class="search" data-test="search">
           <h2 class="search-title section-title">Заинтересовались?</h2>
           <p class="search-description section-headline">Укажите предполагаемые даты поездки, <br> и мы покажем вам
@@ -125,17 +130,19 @@
             предложения гостиниц в Седоне</p>
           <button class="search-button button brown-button">Поиск гостиницы в Седоне</button>
         </section>
+        <!-- Subscribe-section-->
         <section class="subscribe-index" data-test="subscribe">
           <h2 class="subscribe-title section-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description section-headline">Только полезная информация и никакого спама, <br> честное
             бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="user-email">Укажите Ваш e-mail</label>
-            <input type="email" inputmode="email" id="user-email" name="user-email" placeholder="Ваш e-mail">
+            <input type="email" inputmode="email" id="user-email" name="user-email" placeholder="Ваш e-mail" required>
             <button class="subscribe-button blue-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
+      <!-- Footer -->
       <footer class="footer" data-test="footer">
         <ul class="socials-list">
           <li class="socials-item">
@@ -163,21 +170,20 @@
           <a class="developer-logo" href="https://htmlacademy.ru"></a>
         </p>
       </footer>
-
-
-      <div class="modal-window">
+      <!-- Modal-window -->
+      <div class="modal-window modal-window-exit">
         <div class="modal-container">
           <h2 class="section-title modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="stay-time-form">
               <div class="stay-time-wrapper">
-                <label class="stay-time-label modal-headline" for="check-in">Дата заезда:</label>
-                <input class="modal-input" id="check-in" type="text" name="check-in" value="27 апреля 2020">
+                <label class="stay-time-label modal-headline" for="check-in">Дата Заезда:</label>
+                <input class="modal-input" id="check-in" type="text" name="check-in" value="27 апреля 2020" required>
               </div>
               <p class="form-warning">Мы не можем отправить вас в прошлое.</p>
               <div class="stay-time-wrapper">
-                <label class="stay-time-label modal-headline" for="check-out">Дата выезда:</label>
-                <input class="modal-input" id="check-out" type="text" name="check-out" value="1 сентября 2023">
+                <label class="stay-time-label modal-headline" for="check-out">Дата Выезда:</label>
+                <input class="modal-input" id="check-out" type="text" name="check-out" value="1 сентября 2023" required>
               </div>
               <p class="form-message">На эти даты есть свободные номера. Пока есть.</p>
             </fieldset>
@@ -188,8 +194,8 @@
                   <button class="count-button count-less" type="button">
                     <span class="visually-hidden">Уменьшить количество</span>
                   </button>
-                  <input class="adult-input" id="adult" type="text" inputmode="numeric" name="adult-number"
-                    value="2">
+                  <input class="adult-input" id="adult" type="text" inputmode="numeric" name="adult-number" value="2"
+                    required>
                   <button class="count-button count-more" type="button">
                     <span class="visually-hidden">Увеличить количество</span>
                   </button>
@@ -197,14 +203,13 @@
               </div>
               <div class="ages-wrapper-kids">
                 <label class="modal-headline ages-headline kids-remainder" for="kids">Дети:</label>
-
                 <button class="tooltip" aria-labelledby="tooltip-label-kids">
-                  <p class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, <br>
-                    которые
-                    будут с вами, возраст которых от
-                    6 до 18лет. Дети <br> до 6 лет размещаются <br> бесплатно.</p>
-                  </button>
-
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">
+                    <span class="tooltip-text-container"> Укажите количество детей, которые
+                      будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
+                </button>
               </div>
               <div class="count-ages-wrapper">
                 <button class="count-button count-less" type="button">
@@ -219,13 +224,12 @@
             <button class="modal-button button blue-button" type="button">Найти</button>
           </form>
           <form class="modal-exit" method="dialog">
-          <button class="modal-close-button modal-container-close" type="submit">
-            <span class="visually-hidden">Кнопка закрытия модального окна</span>
-          </button>
-        </form>
+            <button class="modal-close-button modal-container-close" type="submit">
+              <span class="visually-hidden">Кнопка закрытия модального окна</span>
+            </button>
+          </form>
         </div>
       </div>
-
     </div>
   </body>
 
