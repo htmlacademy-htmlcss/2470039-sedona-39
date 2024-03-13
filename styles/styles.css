@@ -790,9 +790,8 @@ li.socials-item:nth-child(3n) {
 }
 
 .developer:focus {
-  outline: 2px solid #000000;
+  outline: auto;
 }
-
 
 /* CATALOG */
 
@@ -1000,7 +999,8 @@ li.socials-item:nth-child(3n) {
 .type-input:checked {
   background-image: url("../images/icons/radio.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center center;
+  background-size: 10px;
 }
 
 .type-filter {
@@ -1753,6 +1753,13 @@ li.socials-item:nth-child(3n) {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.count-button:focus-within::before,
+.count-button:focus-within::before {
+  border: var(--basic-black);
+}
+
+
+
 .count-ages-wrapper {
   display: flex;
 }
@@ -1857,9 +1864,10 @@ li.socials-item:nth-child(3n) {
   background-color: var(--basic-black);
   mask-image: url("../images/icons/close.svg");
   mask-repeat: no-repeat;
-  mask-position: center;
-  width: 20px;
-  height: 20px;
+  mask-position: center center;
+  mask-size: 14px;
+  width: 14px;
+  height: 14px;
 }
 
 .modal-close-button:hover {
