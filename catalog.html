@@ -111,27 +111,23 @@
                 <legend class="price-filter-title filters-title">Стоимость, ₽:</legend>
                 <div class="price-area">
                   <label class="first-price" for="first-price">
-                    <span class="price-label">от</span>
+                    <span class="price-label price-label-from">от</span>
                     <input type="text" inputmode="numeric" pattern="\d*" id="first-price" name="first-price"
                       placeholder="0" value="0">
                   </label>
                   <label class="last-price" for="last-price">
-                    <span class="price-label">до</span>
+                    <span class="price-label price-label-to">до</span>
                     <input type="text" inputmode="numeric" pattern="\d*" id="last-price" name="last-price"
                       placeholder="9000" value="9000">
                   </label>
                 </div>
                 <div class="slidercontainer">
-                  <div class="slider-min-price">
                     <button class="slider-button min-price">
                       <span class="visually-hidden">Уменьшение цены</span>
                     </button>
-                  </div>
-                  <div class="slider-max-price">
                     <button class="slider-button max-price">
                       <span class="visually-hidden">Увеличение цены</span>
                     </button>
-                  </div>
                 </div>
               </fieldset>
               <div class="filter-buttons">
@@ -194,7 +190,6 @@
               <p class="price">От 5000 ₽</p>
               <a class="read-more-button catalog-button button brown-button" href="#">Подробнее</a>
               <button class="favorite-button-on catalog-button button green-button">В избранном</button>
-              <button class="favorite-button visually-hidden catalog-button button blue-button">В избранное</button>
               <p class="stars four-stars">
                 <span class="visually-hidden">Отель 4 звезды</span>
               </p>
@@ -293,9 +288,8 @@
           <h2 class="visually-hidden">Номер телефона</h2>
           <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
-        <p class="developer">
-          <span class="visually-hidden">Выполнено Академией HTML</span>
-          <a class="developer-logo" href="https://htmlacademy.ru"></a>
+        <p class="developer" tabindex="1">
+          <a class="developer-logo" href="https://htmlacademy.ru" tabindex="2">Выполнено Академией HTML</a>
         </p>
       </footer>
     </div>
