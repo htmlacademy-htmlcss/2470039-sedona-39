@@ -39,6 +39,10 @@
   list-style-type: none;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
 
 html {
   height: 100vh;
@@ -60,8 +64,6 @@ body {
   margin: 0 auto;
   padding: 0;
   display: flex;
-  -moz-box-orient: vertical;
-  -moz-box-direction: normal;
   flex-direction: column;
   background-color: var(--basic-white);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
@@ -86,15 +88,12 @@ body {
 
 .header-title {
   display: flex;
-  -moz-box-orient: vertical;
-  -moz-box-direction: normal;
   flex-direction: column;
 }
 
 .navigation {
   display: flex;
   flex-wrap: wrap;
-  -moz-box-align: center;
   align-items: center;
   padding: 0 70px;
   gap: 30px;
@@ -249,7 +248,7 @@ body {
   font-size: 10px;
   font-weight: 400;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 100vh;
   color: var(--basic-white);
   background-color: var(--basic-green);
 }
@@ -535,8 +534,6 @@ body {
 
 .search {
   display: flex;
-  -moz-box-orient: vertical;
-  -moz-box-direction: normal;
   flex-direction: column;
   padding: 96px 0;
   margin: 0;
@@ -1210,12 +1207,10 @@ li.socials-item:nth-child(3n) {
 
 .filter-button {
   display: flex;
-  -moz-box-pack: center;
   justify-content: center;
   font-family: inherit;
   width: 191px;
   height: 36px;
-  -moz-box-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -1318,7 +1313,6 @@ li.socials-item:nth-child(3n) {
   flex-wrap: wrap;
   gap: 8px;
   min-width: 160px;
-  -moz-box-align: center;
   align-items: center;
 }
 
@@ -1401,7 +1395,6 @@ li.socials-item:nth-child(3n) {
 }
 
 .catalog-item:last-child {
-  -moz-box-pack: start;
   justify-content: flex-start;
 }
 
