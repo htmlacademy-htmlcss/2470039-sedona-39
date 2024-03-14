@@ -569,7 +569,7 @@ body {
 }
 
 .subscribe-form input:disabled {
-  border: var(--border-gray-2);
+  border: 2px solid rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 255, 255, 0.3);
   pointer-events: none;
 }
@@ -885,13 +885,18 @@ li.socials-item:nth-child(3n) {
 .breadcrumbs-link-main {
   display: flex;
   flex-shrink: 0;
+  margin: 0;
+}
+
+.breadcrumbs-link-main::before {
+  content: "";
+  display: inline-block;
   height: 15px;
   width: 13px;
   mask-image: url("../images/icons/main-page.svg");
   mask-position: bottom;
   mask-repeat: no-repeat;
   background-color: var(--basic-white);
-  margin: 0;
 }
 
 /* Forms-setting */
@@ -999,19 +1004,22 @@ li.socials-item:nth-child(3n) {
 
 .infrastructure-filter-item:disabled,
 .type-filter-item:disabled {
-  opacity: 60%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   pointer-events: none;
 }
 
 .infrastructure-filter-item:disabled:hover,
 .type-filter-item:disabled:hover {
-  opacity: 60%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   pointer-events: none;
 }
 
 .infrastructure-filter-item:disabled:focus,
 .type-filter-item:disabled:focus {
-  opacity: 60%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   pointer-events: none;
 }
 
@@ -1040,7 +1048,7 @@ li.socials-item:nth-child(3n) {
   background-image: url("../images/icons/radio.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1126,7 +1134,7 @@ li.socials-item:nth-child(3n) {
 }
 
 .price-area input:disabled {
-  border: var(--border-gray-2);
+  border: 2px solid rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 255, 255, 0.3);
   pointer-events: none;
 }
@@ -1158,7 +1166,7 @@ li.socials-item:nth-child(3n) {
 }
 
 .slider-button:active {
-  border: 2px solid var(--basic-blue);
+  box-shadow: 0 0 0 2px var(--basic-blue);
 }
 
 .min-price {
@@ -1285,7 +1293,6 @@ li.socials-item:nth-child(3n) {
 
 .catalog-select:disabled {
   border: 2px solid var(--basic-black);
-  opacity: 30%;
   color: rgba(255, 255, 255, 0.3);
   pointer-events: none;
 }
@@ -1672,7 +1679,7 @@ li.socials-item:nth-child(3n) {
 }
 
 .modal-input:disabled {
-  border: var(--border-gray-2);
+  border: 2px solid rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 255, 255, 0.3);
   pointer-events: none;
 }
