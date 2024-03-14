@@ -466,6 +466,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
+  align-items: start;
 }
 
 .infrastructure-item {
@@ -942,6 +943,7 @@ li.socials-item:nth-child(3n) {
 
 .filter-form {
   display: flex;
+  flex-wrap: wrap;
   gap: 70px;
 }
 
@@ -977,9 +979,10 @@ li.socials-item:nth-child(3n) {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  min-width: 150px;
+  max-width: 170px;
   margin: 0;
   padding: 0;
-  padding-right: 2px;
   border: none;
 }
 
@@ -990,6 +993,7 @@ li.socials-item:nth-child(3n) {
 
 .choose-type {
   position: relative;
+  display: contents;
 }
 
 .infrastructure-input {
@@ -1026,6 +1030,19 @@ li.socials-item:nth-child(3n) {
 
 /* Type-form */
 
+.type-filter {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 150px;
+  max-width: 170px;
+  margin: 0;
+  margin-right: 70px;
+  padding: 0;
+  border: none;
+}
+
 .type-filter-list {
   padding: 0;
 }
@@ -1056,17 +1073,6 @@ li.socials-item:nth-child(3n) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.type-filter {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-  margin-right: 70px;
-  padding: 0;
-  border: none;
 }
 
 .type-filter:has(.type-input:disabled) {
@@ -1120,7 +1126,7 @@ li.socials-item:nth-child(3n) {
   height: 48px;
   gap: 2px;
   width: 288px;
-  margin-bottom: 36px;
+  margin-bottom: 44px;
   overflow: hidden;
   border-radius: var(--border-radius);
   position: relative;
@@ -1193,7 +1199,7 @@ li.socials-item:nth-child(3n) {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 60.5px;
+  right: 60px;
 }
 
 /* Filter-buttons */
@@ -1233,10 +1239,6 @@ li.socials-item:nth-child(3n) {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.filter-button-reset:focus {
-  border: 3px solid var(--basic-blue);
-}
-
 .filter-button-reset:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1261,7 +1263,6 @@ li.socials-item:nth-child(3n) {
 .catalog-navigation {
   display: flex;
   padding: 50px 70px 0;
-  gap: 70px;
 }
 
 .catalog-title {
@@ -1272,7 +1273,7 @@ li.socials-item:nth-child(3n) {
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
-  margin-right: auto;
+  padding-right: 200px;
   text-transform: uppercase;
 }
 
@@ -1314,6 +1315,7 @@ li.socials-item:nth-child(3n) {
   gap: 8px;
   min-width: 160px;
   align-items: center;
+  margin-left: auto;
 }
 
 .catalog-vision-item {
