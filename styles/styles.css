@@ -993,7 +993,8 @@ li.socials-item:nth-child(3n) {
 
 .choose-type {
   position: relative;
-  display: contents;
+   display: flex;
+  align-items: center;
 }
 
 .infrastructure-input {
@@ -1014,15 +1015,18 @@ li.socials-item:nth-child(3n) {
   background-position: center center;
 }
 
-.choose-input:hover {
+.choose:hover,
+.choose-type:hover {
   opacity: 60%;
 }
 
-.choose-input:active:not(:hover) {
+.choose:active,
+.choose-type:active {
   opacity: 30%;
 }
 
-.choose-input:disabled {
+.choose:disabled,
+.choose-type:disabled {
   opacity: 30%;
   pointer-events: none;
 }
@@ -1078,10 +1082,6 @@ li.socials-item:nth-child(3n) {
 .type-filter-item:has(.type-input:disabled) {
   opacity: 30%;
   pointer-events: none;
-}
-
-.type-filter-item:active {
-  outline: none;
 }
 
 /* Price-form */
@@ -1684,8 +1684,7 @@ li.socials-item:nth-child(3n) {
 }
 
 .modal-input:disabled {
-  background-color: var(--light-gray);
-  color: var(--basic-gray);
+  background-color: var(--basic-gray);
   pointer-events: none;
 }
 
@@ -1720,6 +1719,10 @@ li.socials-item:nth-child(3n) {
   background-repeat: no-repeat;
   background-position-x: 402px;
   background-position-y: 16px;
+}
+
+.stay-time-form input:disabled {
+  background-image: none;
 }
 
 .form-warning,
@@ -1806,10 +1809,12 @@ li.socials-item:nth-child(3n) {
 
 .count-less {
   --icon: url("../images/icons/minus.svg");
+  border-radius: 4px 0 0 4px;
 }
 
 .count-more {
   --icon: url("../images/icons/plus.svg");
+  border-radius:  0 4px 4px 0;
 }
 
 .count-more:hover::before,
