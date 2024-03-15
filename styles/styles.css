@@ -1031,6 +1031,10 @@ li.socials-item:nth-child(3n) {
   pointer-events: none;
 }
 
+.choose:has(.choose-input:disabled) {
+  opacity: 30%;
+  pointer-events: none;
+}
 
 /* Type-form */
 
