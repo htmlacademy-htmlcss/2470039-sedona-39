@@ -1680,7 +1680,7 @@ li.socials-item:nth-child(3n) {
 .modal-input:hover,
 .modal-input:focus {
   background-color: var(--middle-gray);
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--basic-black);
 }
 
 .modal-input:disabled {
