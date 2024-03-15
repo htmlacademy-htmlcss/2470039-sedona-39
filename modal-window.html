@@ -172,19 +172,19 @@
         </p>
       </footer>
       <!-- Modal-window -->
-      <div class="modal-window close">
+      <div class="modal-window open">
         <div class="modal-container">
           <h2 class="section-title modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="stay-time-form">
               <div class="stay-time-wrapper">
                 <label class="stay-time-label modal-headline" for="check-in">Дата Заезда:</label>
-                <input class="modal-input" id="check-in" type="text" name="check-in" placeholder="Укажите дату" value="1 сентября 2023"  required>
+                <input class="modal-input" id="check-in" type="text" name="check-in" value="27 апреля 2020" required>
               </div>
               <p class="form-warning">Мы не можем отправить вас в прошлое.</p>
               <div class="stay-time-wrapper">
                 <label class="stay-time-label modal-headline" for="check-out">Дата Выезда:</label>
-                <input class="modal-input" id="check-out" type="text" name="check-out" placeholder="Укажите дату" value="1 сентября 2023"  required>
+                <input class="modal-input" id="check-out" type="text" name="check-out" value="1 сентября 2023" required>
               </div>
               <p class="form-message">На эти даты есть свободные номера. Пока есть.</p>
             </fieldset>
@@ -193,12 +193,12 @@
                 <label class="modal-headline ages-headline-adult" for="adult">Взрослые:</label>
                 <div class="count-ages-wrapper">
                   <button class="count-button count-less" type="button">
-                    <span class="visually-hidden">Уменьшить количество взрослых</span>
+                    <span class="visually-hidden">Уменьшить количество</span>
                   </button>
-                  <input class="adult-input" id="adult" type="text" inputmode="numeric" name="adult-number" placeholder="2" value="2"
+                  <input class="adult-input" id="adult" type="text" inputmode="numeric" name="adult-number" value="2"
                     required>
                   <button class="count-button count-more" type="button">
-                    <span class="visually-hidden">Увеличить количество взрослых</span>
+                    <span class="visually-hidden">Увеличить количество</span>
                   </button>
                 </div>
               </div>
@@ -214,22 +214,20 @@
               </div>
               <div class="count-ages-wrapper">
                 <button class="count-button count-less" type="button">
-                  <span class="visually-hidden">Уменьшить количество детей</span>
+                  <span class="visually-hidden">Уменьшить количество</span>
                 </button>
-                <input class="kids-input" id="kids" type="text" inputmode="numeric" name="kids" placeholder="2" value="2">
+                <input class="kids-input" id="kids" type="text" inputmode="numeric" name="kids" value="2">
                 <button class="count-button count-more" type="button">
-                  <span class="visually-hidden">Увеличить количество детей</span>
+                  <span class="visually-hidden">Увеличить количество</span>
                 </button>
               </div>
             </fieldset>
             <button class="modal-button button blue-button" type="button">Найти</button>
           </form>
-          <form class="modal-exit" method="dialog">
-            <button class="modal-close-button modal-container-close" type="submit">
+            <button class="modal-close-button modal-container-close" type="button">
               <span class="visually-hidden">Кнопка закрытия модального окна</span>
             </button>
-          </form>
-        </div>
+          </div>
       </div>
     </div>
   </body>
