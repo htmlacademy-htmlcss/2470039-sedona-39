@@ -1075,13 +1075,13 @@ li.socials-item:nth-child(3n) {
   transform: translate(-50%, -50%);
 }
 
-.type-filter:has(.type-input:disabled) {
+.type-filter-item:has(.type-input:disabled) {
   opacity: 30%;
   pointer-events: none;
 }
 
-.type-input:focus:not(:disabled) {
-  outline: auto;
+.type-filter-item:active {
+  outline: none;
 }
 
 /* Price-form */
@@ -1824,6 +1824,7 @@ li.socials-item:nth-child(3n) {
 
 .count-button:focus {
   outline: auto;
+  z-index: 1;
 }
 
 .count-ages-wrapper {
